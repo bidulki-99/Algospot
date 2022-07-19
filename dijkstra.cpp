@@ -9,7 +9,7 @@ vector<int> dijkstra(int src) {
 
     while (!pq.empty()) {
         int cost = -pq.top().first;
-        int here = pq.top.second;
+        int here = pq.top().second;
         pq.pop();
 
         if (dist[here] < cost)
